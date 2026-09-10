@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国机械设备-行业分类、选型要点与采购指南</title>
+<meta name="description" content="中国机械设备行业信息平台，梳理工程机械、通用机械、机床工具、农业机械等主要门类，提供设备选型要点、采购流程、质量与安全注意事项及常见问题解答。">
+<meta name="keywords" content="中国机械设备,工程机械,通用机械,机床工具,农业机械,设备选型,机械采购">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1b2430;
+  --ink-soft:#4a5866;
+  --line:#dfe5ec;
+  --bg:#f4f6f9;
+  --card:#ffffff;
+  --brand:#1d4f91;
+  --brand-deep:#143a6b;
+  --accent:#e07b18;
+  --accent-soft:#fdf1e2;
+  --radius:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px;}
+
+/* ---------- 顶部信息条 ---------- */
+.topbar{
+  background:var(--brand-deep);
+  color:#c9d8ec;
+  font-size:13px;
+}
+.topbar .wrap{
+  display:flex;justify-content:space-between;align-items:center;
+  min-height:38px;flex-wrap:wrap;gap:6px;
+}
+.topbar span{letter-spacing:.3px;}
+
+/* ---------- 页眉 ---------- */
+header.site{
+  background:var(--card);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:50;
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;min-height:72px;flex-wrap:wrap;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+  font-size:20px;font-weight:700;color:var(--brand-deep);
+  letter-spacing:.5px;
+}
+.logo .mark{
+  width:36px;height:36px;border-radius:8px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-deep));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:17px;font-weight:700;
+}
+.logo small{
+  display:block;font-size:11px;font-weight:400;
+  color:var(--ink-soft);letter-spacing:1.5px;
+}
+nav.main-nav ul{
+  display:flex;list-style:none;gap:26px;flex-wrap:wrap;
+}
+nav.main-nav a{
+  font-size:15px;color:var(--ink-soft);padding:6px 0;
+  border-bottom:2px solid transparent;transition:.2s;
+}
+nav.main-nav a:hover,nav.main-nav a.active{
+  color:var(--brand);border-bottom-color:var(--brand);
+}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:linear-gradient(120deg,#143a6b 0%,#1d4f91 55%,#2a6bb5 100%);
+  color:#fff;padding:56px 0 50px;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.35fr 1fr;gap:44px;align-items:center;
+}
+.hero h1{
+  font-size:34px;line-height:1.35;font-weight:700;margin-bottom:16px;
+  letter-spacing:.5px;
+}
+.hero p.lead{
+  font-size:16px;color:#d3e2f5;max-width:640px;margin-bottom:24px;
+}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;}
+.hero-tags span{
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);
+  padding:5px 13px;border-radius:20px;font-size:13px;color:#e8f1fb;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:11px 24px;border-radius:6px;
+  font-size:15px;font-weight:600;transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary:hover{background:#c96a10;}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;}
+.btn-ghost:hover{background:rgba(255,255,255,.12);}
+
+.hero-panel{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:var(--radius);
+  padding:24px 24px 20px;
+}
+.hero-panel h2{
+  font-size:16px;font-weight:600;margin-bottom:14px;color:#fff;
+  padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.18);
+}
+.hero-panel ul{list-style:none;}
+.hero-panel li{
+  display:flex;justify-content:space-between;gap:12px;
+  font-size:14px;color:#d3e2f5;padding:9px 0;
+  border-bottom:1px dashed rgba(255,255,255,.13);
+}
+.hero-panel li:last-child{border-bottom:none;}
+.hero-panel li b{color:#fff;font-weight:600;}
+
+/* ---------- 通用区块 ---------- */
+section.block{padding:52px 0;}
+section.block.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.section-head{margin-bottom:30px;}
+.section-head h2{
+  font-size:24px;font-weight:700;color:var(--ink);
+  display:inline-block;position:relative;padding-bottom:10px;
+}
+.section-head h2::after{
+  content:"";position:absolute;left:0;bottom:0;
+  width:46px;height:3px;background:var(--accent);border-radius:2px;
+}
+.section-head p{margin-top:10px;color:var(--ink-soft);font-size:15px;max-width:820px;}
+
+/* ---------- 分类卡片 ---------- */
+.cat-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+}
+.cat-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;transition:.22s;
+}
+.cat-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 24px rgba(20,58,107,.10);
+  border-color:#b9cde6;
+}
+.cat-card .icon{
+  width:40px;height:40px;border-radius:8px;background:var(--accent-soft);
+  color:var(--accent);font-size:18px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+.cat-card h3{font-size:16px;margin-bottom:8px;color:var(--brand-deep);}
+.cat-card p{font-size:14px;color:var(--ink-soft);}
+
+/* ---------- 内容双栏 ---------- */
+.split{
+  display:grid;grid-template-columns:2fr 1fr;gap:36px;align-items:start;
+}
+.article-list{display:flex;flex-direction:column;gap:20px;}
+.article-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;
+}
+.article-item h3{
+  font-size:17px;color:var(--brand-deep);margin-bottom:10px;
+}
+.article-item p{font-size:14.5px;color:var(--ink-soft);}
+.article-item .meta{
+  margin-top:12px;font-size:12.5px;color:#8b98a6;display:flex;gap:16px;flex-wrap:wrap;
+}
+
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;margin-bottom:20px;
+}
+.side-card h3{
+  font-size:15.5px;color:var(--brand-deep);margin-bottom:14px;
+  padding-bottom:10px;border-bottom:1px solid var(--line);
+}
+.side-card ul{list-style:none;}
+.side-card li{
+  font-size:14px;color:var(--ink-soft);padding:8px 0;
+  border-bottom:1px dashed var(--line);
+}
+.side-card li:last-child{border-bottom:none;}
+.side-card li b{color:var(--ink);}
+
+/* ---------- 选型步骤 ---------- */
+.steps{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+}
+.step{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;position:relative;
+}
+.step .num{
+  font-size:26px;font-weight:700;color:#c7d6e8;line-height:1;margin-bottom:12px;
+}
+.step h3{font-size:15.5px;margin-bottom:8px;color:var(--brand-deep);}
+.step p{font-size:14px;color:var(--ink-soft);}
+
+/* ---------- 表格 ---------- */
+.table-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:620px;}
+thead th{
+  background:#eef3f9;color:var(--brand-deep);text-align:left;
+  padding:14px 18px;font-weight:600;border-bottom:1px solid var(--line);
+}
+tbody td{
+  padding:13px 18px;border-bottom:1px solid var(--line);color:var(--ink-soft);
+}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:#fafcfe;}
+
+/* ---------- 提示框 ---------- */
+.notice{
+  background:var(--accent-soft);border-left:4px solid var(--accent);
+  border-radius:0 var(--radius) var(--radius) 0;
+  padding:18px 22px;margin-top:26px;
+}
+.notice h3{font-size:15.5px;color:#a35a0c;margin-bottom:8px;}
+.notice p{font-size:14px;color:#7a5b33;}
+
+/* ---------- FAQ ---------- */
+.faq{display:flex;flex-direction:column;gap:14px;}
+.faq details{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 22px;
+}
+.faq summary{
+  cursor:pointer;font-size:15.5px;font-weight:600;color:var(--brand-deep);
+  list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{
+  content:"+";font-size:20px;color:var(--accent);font-weight:400;line-height:1;
+}
+.faq details[open] summary::after{content:"−";}
+.faq details p{
+  margin-top:12px;font-size:14.5px;color:var(--ink-soft);
+  padding-top:12px;border-top:1px dashed var(--line);
+}
+
+/* ---------- 页脚 ---------- */
+footer.site{
+  background:#132a47;color:#a9bcd4;padding:44px 0 26px;font-size:14px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;
+}
+.footer-grid h4{
+  color:#fff;font-size:15px;margin-bottom:14px;font-weight:600;
+}
+.footer-grid p{font-size:13.5px;line-height:1.85;color:#8fa6c1;}
+.footer-grid ul{list-style:none;}
+.footer-grid li{margin-bottom:9px;}
+.footer-grid a{color:#a9bcd4;font-size:13.5px;transition:.2s;}
+.footer-grid a:hover{color:#fff;}
+.copyright{
+  margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);
+  font-size:13px;color:#7f95b0;display:flex;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .steps{grid-template-columns:repeat(2,1fr);}
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .split{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:26px;}
+}
+@media (max-width:640px){
+  body{font-size:15px;}
+  .hero{padding:40px 0 36px;}
+  .hero h1{font-size:25px;}
+  .cat-grid{grid-template-columns:1fr;}
+  .steps{grid-template-columns:1fr;}
+  .header-inner{min-height:auto;padding:12px 0;}
+  nav.main-nav ul{gap:16px;}
+  nav.main-nav a{font-size:14px;}
+  section.block{padding:38px 0;}
+  .section-head h2{font-size:21px;}
+  .footer-grid{grid-template-columns:1fr;}
+  .article-item{padding:18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>中国机械设备行业信息与选型参考</span>
+    <span>设备分类 · 采购要点 · 使用维护</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <div class="logo">
+      <div class="mark">机</div>
+      <div>
+        中国机械设备
+        <small>MACHINERY GUIDE</small>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#categories" class="active">设备分类</a></li>
+        <li><a href="#selection">选型要点</a></li>
+        <li><a href="#process">采购流程</a></li>
+        <li><a href="#safety">质量与安全</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>中国机械设备：从行业分类到选型采购的实用参考</h1>
+        <p class="lead">机械设备门类众多，用途、工况与技术参数差异很大。本页围绕中国机械设备的主要类别、选型思路、采购流程与使用维护要点进行梳理，帮助初次接触或需要更新设备的企业与个人快速建立整体认知。</p>
+        <div class="hero-tags">
+          <span>工程机械</span>
+          <span>通用机械</span>
+          <span>机床工具</span>
+          <span>农业机械</span>
+          <span>动力与传动</span>
+          <span>环保设备</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#categories" class="btn btn-primary">查看设备分类</a>
+          <a href="#selection" class="btn btn-ghost">了解选型要点</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <h2>选型前先明确的四件事</h2>
+        <ul>
+          <li><span>作业对象与工况</span><b>物料 / 环境</b></li>
+          <li><span>产能与节拍要求</span><b>效率 / 规模</b></li>
+          <li><span>动力与场地条件</span><b>电力 / 空间</b></li>
+          <li><span>维护与备件保障</span><b>服务 / 周期</b></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 设备分类 -->
+  <section class="block" id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>中国机械设备的主要门类</h2>
+        <p>机械设备通常按用途、工作原理或行业归属进行划分。以下分类覆盖生产制造与基础建设中较常见的几个方向，便于按使用场景快速定位。</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="icon">工</div>
+          <h3>工程机械</h3>
+          <p>用于土方、起重、路面、混凝土等施工作业，如挖掘机、装载机、起重机、压路机、混凝土泵车等，强调作业能力与工况适应性。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">通</div>
+          <h3>通用机械</h3>
+          <p>泵、阀、风机、压缩机、减速机、输送设备等，广泛配套于化工、水处理、冶金、食品等行业，注重参数匹配与运行稳定性。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">机</div>
+          <h3>机床与工具</h3>
+          <p>金属切削与成形装备，包括车床、铣床、加工中心、磨床、冲压设备及各类刀具量具，核心关注精度、刚性与加工范围。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">农</div>
+          <h3>农业机械</h3>
+          <p>耕整、播种、植保、收获、烘干及农产品初加工设备，选型与地块规模、作物种类和农艺要求密切相关。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">动</div>
+          <h3>动力与传动</h3>
+          <p>电机、发动机、液压与气动元件、传动部件等，是各类装备的基础配套，参数选配直接影响整机效率与寿命。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">环</div>
+          <h3>环保设备</h3>
+          <p>除尘、废气治理、污水处理、固废处理与分选设备，通常需结合实际排放条件与处理量进行针对性设计。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">包</div>
+          <h3>包装与食品机械</h3>
+          <p>灌装、封口、贴标、输送、杀菌及成型设备，与产品规格、包装材料和产线节拍紧密相关。</p>
+        </article>
+        <article class="cat-card">
+          <div class="icon">智</div>
+          <h3>自动化与智能装备</h3>
+          <p>工业机器人、自动化产线、检测与视觉系统等，用于替代重复性人工，提升一致性与生产节拍。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选型要点 + 侧栏 -->
+  <section class="block alt" id="selection">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>机械设备选型的核心思路</h2>
+        <p>选型不是简单比较价格，而是把工艺需求、使用条件与设备能力对应起来。以下几条思路适用于大多数机械设备的初步筛选。</p>
+      </div>
+      <div class="split">
+        <div class="article-list">
+          <article class="article-item">
+            <h3>先明确工艺需求，再看设备参数</h3>
+            <p>需要处理什么物料、达到多大产能、允许的误差范围是多少，这些决定了设备的规格区间。先确定需求再对照参数，比先看型号再反推需求更有效率，也能避免后期因能力不足或过剩造成浪费。</p>
+            <div class="meta"><span>适用：新建产线、设备更新</span></div>
+          </article>
+          <article class="article-item">
+            <h3>关注工况适应性而非单一指标</h3>
+            <p>同样的设备在不同温度、湿度、粉尘、腐蚀性或连续作业强度下表现差异明显。选型时应确认设备的工作环境要求，包括防护等级、材质、润滑方式和冷却方式等，避免只看标称产能。</p>
+            <div class="meta"><span>适用：重载、连续作业场景</span></div>
+          </article>
+          <article class="article-item">
+            <h3>核算全周期成本</h3>
+            <p>除购置费用外，还应考虑安装调试、能耗、耗材、易损件更换、保养周期与停机损失。部分设备初期投入较低，但能耗或维护成本偏高，长期使用反而负担更重。</p>
+            <div class="meta"><span>适用：预算评估阶段</span></div>
+          </article>
+          <article class="article-item">
+            <h3>确认配套与服务条件</h3>
+            <p>设备能否与现有产线衔接、场地承重与空间是否满足、电力与气源容量是否足够，以及供应商能否提供安装指导、备件供应和技术支持，都会影响实际使用体验。</p>
+            <div class="meta"><span>适用：现场改造项目</span></div>
+          </article>
+        </div>
+        <aside>
+          <div class="side-card">
+            <h3>选型常见参考维度</h3>
+            <ul>
+              <li><b>产能</b>：单位时间处理量</li>
+              <li><b>精度</b>：加工或计量误差范围</li>
+              <li><b>功率</b>：与电网容量匹配</li>
+              <li><b>尺寸</b>：安装与运输限制</li>
+              <li><b>材质</b>：耐磨、耐蚀要求</li>
+              <li><b>控制方式</b>：手动、半自动、自动</li>
+            </ul>
+          </div>
+          <div class="side-card">
+            <h3>需要提前准备的信息</h3>
+            <ul>
+              <li>现场平面图与空间尺寸</li>
+              <li>供电电压、频率与容量</li>
+              <li>物料特性与进料方式</li>
+              <li>目标产量与班次安排</li>
+              <li>环保与安全相关要求</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 采购流程 -->
+  <section class="block" id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>机械设备采购的一般流程</h2>
+        <p>规范的采购流程有助于降低沟通成本和后期风险。以下步骤可根据项目规模适当增减。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>需求梳理</h3>
+          <p>整理工艺要求、产能目标、场地条件与预算范围，形成书面的技术需求说明。</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>方案与询价</h3>
+          <p>向多家供应商说明需求，获取技术方案与报价，重点比较配置差异而非仅看总价。</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>考察与确认</h3>
+          <p>核实供应商资质、生产条件与售后能力，必要时实地查看样机或已有用户现场。</p>
+        </div>
+        <div class="step">
+          <div class="num">04</div>
+          <h3>合同与交付</h3>
+          <p>明确技术参数、验收标准、交付周期、付款方式与质保条款，留存书面记录。</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" style="margin-top:30px;">
+        <table>
+          <thead>
+            <tr>
+              <th>阶段</th>
+              <th>主要工作</th>
+              <th>需要留意的要点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>需求确认</td>
+              <td>明确工艺、产能与现场条件</td>
+              <td>避免需求模糊导致方案反复调整</td>
+            </tr>
+            <tr>
+              <td>供应商筛选</td>
+              <td>对比技术方案、配置与服务</td>
+              <td>关注同类设备的实际使用反馈</td>
+            </tr>
+            <tr>
+              <td>合同签订</td>
+              <td>约定参数、验收与质保条款</td>
+              <td>技术附件应作为合同组成部分</td>
+            </tr>
+            <tr>
+              <td>安装调试</td>
+              <td>现场安装、试运行与培训</td>
+              <td>确认操作与维护人员已接受指导</td>
+            </tr>
+            <tr>
+              <td>验收与归档</td>
+              <td>按标准验收并保存资料</td>
+              <td>保留图纸、说明书与备件清单</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 质量与安全 -->
+  <section class="block alt" id="safety">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>质量判断与安全使用</h2>
+        <p>机械设备通常长期连续运行，质量与安全直接关系到生产效率和人员安全，需要在采购和使用两个环节同时重视。</p>
+      </div>
+      <div class="split">
+        <div>
+          <div class="article-item" style="margin-bottom:20px;">
+            <h3>采购环节的质量关注点</h3>
+            <p>可关注设备所用材料、关键零部件来源、加工工艺与装配质量，查看相关检测报告或合格证明。对于有强制标准要求的设备，应确认其符合相应的安全与技术要求。验收时按约定标准逐项核对，不遗漏空载与负载试运行环节。</p>
+          </div>
+          <div class="article-item">
+            <h3>使用环节的安全要点</h3>
+            <p>操作人员应经过培训并熟悉设备说明书；按规定进行日常点检与定期保养，及时更换磨损件；设备运行时保持防护装置完好，不随意拆除安全联锁；出现异常振动、噪声或温度升高时，应停机排查后再继续使用。</p>
+          </div>
+        </div>
+        <aside>
+          <div class="side-card">
+            <h3>日常维护建议</h3>
+            <ul>
+              <li>按周期检查润滑与紧固状态</li>
+              <li>保持散热与通风通道畅通</li>
+              <li>记录运行参数与异常情况</li>
+              <li>备件按易损程度合理储备</li>
+              <li>建立设备档案与保养计划</li>
+            </ul>
+          </div>
+          <div class="notice">
+            <h3>提示</h3>
+            <p>涉及特种设备或特定行业的机械设备，应遵守相应的法规与监管要求，按规定办理相关手续并由具备条件的人员操作。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>以下问题在机械设备选型与采购过程中较为常见，供初步参考。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>如何判断一台机械设备是否适合自己的生产需求？</summary>
+          <p>建议从工艺要求出发，先确定需要达到的产能、精度和处理对象，再对照设备的技术参数逐项核对。必要时可要求供应商提供同类工况的应用说明，或安排小批量试机，以实际运行结果作为判断依据。</p>
+        </details>
+        <details>
+          <summary>设备价格差异较大，主要差在哪里？</summary>
+          <p>差异通常来自材料与零部件选用、加工与装配工艺、控制系统配置、产能与精度等级、以及售后服务体系等方面。比较时应结合配置清单逐项对照，而不是只比较总价。</p>
+        </details>
+        <details>
+          <summary>采购时需要注意哪些合同细节？</summary>
+          <p>建议明确技术参数与配置、交付时间与方式、验收标准与流程、质保期限与范围、备件供应安排以及违约责任等。技术方案、图纸和配置清单宜作为合同附件，避免口头约定。</p>
+        </details>
+        <details>
+          <summary>设备到货后应做哪些工作？</summary>
+          <p>一般包括开箱检查与清点、按说明书要求安装就位、空载试运行、负载试运行、参数确认以及操作与维护培训。验收合格后应整理并保存随机资料、合格证明与备件清单。</p>
+        </details>
+        <details>
+          <summary>如何延长机械设备的使用寿命？</summary>
+          <p>关键在于规范操作与定期维护。按周期进行润滑、清洁、紧固和检查，及时处理异常，避免长期超负荷或超范围使用，同时保证工作环境符合设备要求，这些都有助于保持设备状态稳定。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>中国机械设备</h4>
+        <p>面向机械设备选型与采购的行业信息参考页面，梳理常见设备门类、选型思路、采购流程与使用维护要点，内容以通用性说明为主，具体应用请结合实际情况判断。</p>
+      </div>
+      <div>
+        <h4>设备分类</h4>
+        <ul>
+          <li><a href="#categories">工程机械</a></li>
+          <li><a href="#categories">通用机械</a></li>
+          <li><a href="#categories">机床与工具</a></li>
+          <li><a href="#categories">农业机械</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>选型与采购</h4>
+        <ul>
+          <li><a href="#selection">选型要点</a></li>
+          <li><a href="#process">采购流程</a></li>
+          <li><a href="#safety">质量与安全</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用建议</h4>
+        <ul>
+          <li>按说明书规范操作</li>
+          <li>定期保养与点检</li>
+          <li>及时更换易损件</li>
+          <li>建立设备运行档案</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>中国机械设备行业信息参考</span>
+      <span>内容仅供选型与采购思路参考，具体参数与要求请以实际产品和相关标准为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('nav.main-nav a');
+  var sections = [];
+  links.forEach(function(a){
+    var id = a.getAttribute('href');
+    if(id && id.charAt(0) === '#'){
+      var el = document.querySelector(id);
+      if(el){ sections.push({link:a, el:el}); }
+    }
+  });
+  function onScroll(){
+    var pos = window.scrollY + 120;
+    var current = sections.length ? sections[0] : null;
+    sections.forEach(function(item){
+      if(item.el.offsetTop <= pos){ current = item; }
+    });
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(current){ current.link.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+
+</body>
+  </html>
